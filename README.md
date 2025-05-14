@@ -40,17 +40,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=voromb&layout=compact&theme=radical" width="48%"/>
 </p>
 
----
 
-## 📫 ¡Conéctate conmigo!
-
-<p align="center">
-  📧 <strong>Email:</strong> <a href="mailto:tuemail@example.com">tuemail@example.com</a><br/>
-  🌐 <strong>Portafolio:</strong> <a href="#">Tu sitio web o LinkedIn</a>
-</p>
-
-
----
 
 ## 📫 ¡Conéctate conmigo!
 

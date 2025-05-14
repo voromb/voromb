@@ -21,28 +21,28 @@
 ## 🚀 Tecnologías que manejo
 
 <p align="center">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Code-HTML-orange?style=for-the-badge" alt="HTML"/>
   </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Style-CSS-blue?style=for-the-badge" alt="CSS"/>
   </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Language-JavaScript-yellow?style=for-the-badge" alt="JavaScript"/>
   </a>
-  <a href="https://www.php.net/" target="_blank">
+  <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Backend-PHP-purple?style=for-the-badge" alt="PHP"/>
   </a>
-  <a href="https://strapi.io/" target="_blank">
+  <a href="https://strapi.io/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Framework-Strapi-green?style=for-the-badge" alt="Strapi"/>
   </a>
-  <a href="https://www.docker.com/" target="_blank">
+  <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/DevOps-Docker-blue?style=for-the-badge" alt="Docker"/>
   </a>
-  <a href="https://kubernetes.io/" target="_blank">
+  <a href="https://kubernetes.io/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/DevOps-Kubernetes-blueviolet?style=for-the-badge" alt="Kubernetes"/>
   </a>
-  <a href="https://mikrotik.com/" target="_blank">
+  <a href="https://mikrotik.com/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Networking-MikroTik-red?style=for-the-badge" alt="MikroTik"/>
   </a>
 </p>

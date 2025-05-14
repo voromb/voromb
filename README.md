@@ -20,6 +20,10 @@ Soy desarrollador con experiencia en tecnologías web como **Next.js**, **Strapi
 - 📧 **Email**: [tuemail@example.com](mailto:tuemail@example.com)
 - 🌐 **Portafolio**: [Tu sitio web o LinkedIn](#)
 
----
+![HTML](https://img.shields.io/badge/Code-HTML-orange)
+![CSS](https://img.shields.io/badge/Style-CSS-blue)
+![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
+![PHP](https://img.shields.io/badge/Backend-PHP-purple)
+![Strapi](https://img.shields.io/badge/Framework-Strapi-green)
 
 ✨ **Gracias por visitar mi perfil. ¡Espero colaborar contigo pronto!** ✨

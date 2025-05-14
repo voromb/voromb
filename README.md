@@ -1,31 +1,26 @@
-![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=voromb&show_icons=true&theme=radical)
 
-# 👋 ¡Hola, soy voromb! 
-¡Bienvenido a mi perfil de GitHub! 🚀
+# 👋 ¡Hola, soy voromb!
 
 ## 🌟 Sobre Mí
-Soy desarrollador con experiencia en tecnologías web como **Next.js**, **Strapi**, **PHP**, **HTML** y **CSS**. Me encanta construir proyectos creativos y funcionales.
+Soy un desarrollador apasionado por la tecnología. Me especializo en **Next.js**, **Strapi**, **PHP**, **HTML** y **CSS**.
 
-### 🚀 Tecnologías que manejo:
-- **Frontend**: HTML, CSS, JavaScript, Next.js
-- **Backend**: PHP, Strapi
-- **Otros**: Diseño web, optimización y SEO
+---
 
-## 🌱 Actualmente estoy aprendiendo:
-- Mejorando mis habilidades en **Next.js** y explorando **TypeScript**.
-
-## 🔭 Proyectos destacados:
-- 🌐 [Mi Proyecto 1](#) - Descripción breve del proyecto.
-- 📱 [Mi Proyecto 2](#) - Descripción breve del proyecto.
-
-## 📫 ¡Conéctate conmigo!
-- 📧 **Email**: [tuemail@example.com](mailto:tuemail@example.com)
-- 🌐 **Portafolio**: [Tu sitio web o LinkedIn](#)
-
+## 🚀 Tecnologías que manejo:
 ![HTML](https://img.shields.io/badge/Code-HTML-orange)
 ![CSS](https://img.shields.io/badge/Style-CSS-blue)
 ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
 ![PHP](https://img.shields.io/badge/Backend-PHP-purple)
 ![Strapi](https://img.shields.io/badge/Framework-Strapi-green)
 
-✨ **Gracias por visitar mi perfil. ¡Espero colaborar contigo pronto!** ✨
+---
+
+## ✨ Mis estadísticas:
+![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=voromb&show_icons=true&theme=radical)
+![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=voromb&layout=compact&theme=radical)
+
+---
+
+## 📫 ¡Conéctate conmigo!
+📧 **Email**: [tuemail@example.com](mailto:tuemail@example.com)
+🌐 **Portafolio**: [Tu sitio web o LinkedIn](#)

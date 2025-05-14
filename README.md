@@ -31,6 +31,6 @@
 ## 📫 ¡Conéctate conmigo!
 
 <p align="center">
-  📧 <strong>Email:</strong> <a href="mailto:tuemail@example.com">tuemail@example.com</a><br/>
+  📧 <strong>Email:</strong> <a href="mailto:voromb@hotmail.com">voromb@hotmail.com</a><br/>
   🌐 <strong>Portafolio:</strong> <a href="#">Tu sitio web o LinkedIn</a>
 </p>

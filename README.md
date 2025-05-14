@@ -1,3 +1,5 @@
+![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=voromb&show_icons=true&theme=radical)
+
 # 👋 ¡Hola, soy voromb! 
 ¡Bienvenido a mi perfil de GitHub! 🚀
 

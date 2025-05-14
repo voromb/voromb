@@ -46,5 +46,5 @@
 
 <p align="center">
   📧 <strong>Email:</strong> <a href="mailto:voromb@hotmail.com">voromb@hotmail.com</a><br/>
-  🌐 <strong>Portafolio:</strong> <a href="#">Tu sitio web o LinkedIn</a>
+  🌐 <strong>Portafolio:</strong> <a href="#">LinkedIn</a>
 </p>

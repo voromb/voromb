@@ -60,13 +60,6 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=voromb&layout=compact&theme=radical" width="48%"/>
 </p>
 
----
-
-## 💻 Terminal Matrix
-
-![Panel Matrix](https://raw.githubusercontent.com/voromb/voromb/main/github-metrics.svg?v=2)
-
----
 
 ## 📫 ¡Conéctate conmigo!
 <p align="center">

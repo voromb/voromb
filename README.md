@@ -57,10 +57,8 @@
 ---
 
 ## 💻 Terminal Matrix
-<p align="center">
-  <!-- Si cambiaste el nombre o la carpeta, ajusta esta ruta -->
-  <img src="metrics_renders/github-metrics.svg" alt="Panel de métricas estilo Matrix" width="100%"/>
-</p>
+
+![Panel Matrix](metrics_renders/github-metrics.svg?v=2)
 
 ---
 

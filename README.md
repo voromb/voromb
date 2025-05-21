@@ -1,4 +1,4 @@
-<h1 align="center">👋 ¡Hola, soy <span style="color:#facc15">Voro Moran</span>!</h1>
+<h1 align="center">👋 ¡Hola, soy <span style="color:#00ff00">Voro Moran</span>!</h1>
 <p align="center">
   💻 <strong>Desarrollador apasionado por la tecnología</strong><br/>
   🔭 Actualmente estoy desarrollando software y realizando tareas de TI en <strong>Aplisein</strong>.
@@ -51,9 +51,9 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=voromb&layout=compact&theme=radical" width="48%"/>
 </p>
 
-## 🏆 Métricas de GitHub
+## 💻 Terminal Hacker
 <p align="center">
-  <img src="github-metrics.svg" alt="Métricas de GitHub" width="100%"/>
+  <img src="github-metrics.svg" alt="Terminal Hacker Stats" width="100%"/>
 </p>
 
 ## 📫 ¡Conéctate conmigo!

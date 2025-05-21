@@ -1,11 +1,14 @@
 <h1 align="center">👋 ¡Hola, soy <span style="color:#00ff00">Voro Moran</span>!</h1>
+
 <p align="center">
   💻 <strong>Desarrollador apasionado por la tecnología</strong><br/>
   🔭 Actualmente estoy desarrollando software y realizando tareas de TI en <strong>Aplisein</strong>.
 </p>
+
 <p align="center">
   Me especializo en <strong>Next.js</strong>, <strong>Strapi</strong>, <strong>PHP</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>MikroTik</strong>, <strong>Docker</strong> y <strong>Kubernetes</strong>.
 </p>
+
 <p align="center">
   📜 Certificado en tecnologías de redes por <strong>MikroTik</strong>
 </p>
@@ -51,13 +54,18 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=voromb&layout=compact&theme=radical" width="48%"/>
 </p>
 
-## 💻 Terminal Hacker
+---
+
+## 💻 Terminal Matrix
 <p align="center">
-  <img src="github-metrics.svg" alt="Terminal Hacker Stats" width="100%"/>
+  <!-- Si cambiaste el nombre o la carpeta, ajusta esta ruta -->
+  <img src="metrics_renders/github-metrics.svg" alt="Panel de métricas estilo Matrix" width="100%"/>
 </p>
+
+---
 
 ## 📫 ¡Conéctate conmigo!
 <p align="center">
   📧 <strong>Email:</strong> <a href="mailto:voromb@hotmail.com">voromb@hotmail.com</a><br/>
-  🌐 <strong>Portafolio:</strong> <a href="#">LinkedIn</a>
+  🌐 <strong>LinkedIn:</strong> <a href="#">Visita mi perfil</a>
 </p>

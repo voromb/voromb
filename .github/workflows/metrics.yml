@@ -1,64 +1,43 @@
+# .github/workflows/metrics.yml
 name: Metrics
+
 on:
-  # Todos los días a las 06:00 UTC ≈ 08:00 Madrid
-  schedule: [{ cron: "0 6 * * *" }]
+  schedule: [{ cron: "0 6 * * *" }]      # 06:00 UTC → 08:00 Madrid
   workflow_dispatch:
+
 jobs:
-  github-metrics:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      # Necesario para asegurar que el repositorio está correctamente clonado
-      - name: Checkout
-        uses: actions/checkout@v3
-        
-      # Usa la acción de métricas con template terminal personalizado
-      - name: Generate hacker terminal metrics
-        uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@latest
         with:
-          # === Seguridad ===
-          token: ${{ secrets.METRICS_TOKEN }}      # Tu PAT personal
-          committer_token: ${{ secrets.GITHUB_TOKEN }}  # Para hacer el commit del SVG
-          # === Configuración de archivo ===
-          filename: github-metrics.svg             # Nombre resultante
-          output_action: commit                    # Haz commit automático
-          committer_branch: main                   # Define explícitamente la rama
-          # === Configuración general ===
-          template: terminal                       # Plantilla de terminal
-          user: voromb                             # Tu usuario
+          # ––––– Seguridad
+          token: ${{ secrets.METRICS_TOKEN }}       # tu PAT con repo + read:user
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+          # ––––– Salida
+          filename: github-metrics.svg
+          output_action: commit
+          output_path: .
+
+          # ––––– Apariencia
+          template: terminal             # ⇢ mismo look que el ejemplo
+          config_display: large          # ⇢ ancho completo
           config_timezone: Europe/Madrid
-          # === Personalización de estilo ===
-          extras_css: |
-            :root {
-              --color-calendar-graph-day-bg: #1b1f230a;
-              --color-terminal-text: #00ff00;
-              --color-terminal-background: #000000;
-              --color-terminal-border: #00ff00;
-              --terminal-box-shadow: 0 3px 10px rgba(0, 255, 0, 0.25);
-              --font: 'Courier New', monospace;
-            }
-            .terminal {
-              background-color: var(--color-terminal-background) !important;
-              border: 1px solid var(--color-terminal-border) !important;
-              box-shadow: var(--terminal-box-shadow) !important;
-            }
-            .terminal text, .terminal * {
-              font-family: var(--font) !important;
-              color: var(--color-terminal-text) !important;
-            }
-            .terminal [data-terminal-type="input"]:after {
-              color: var(--color-terminal-text) !important;
-            }
-          # === Bloques base ===
-          base: header, activity, community, repositories
-          # === Plugins ===
+
+          # ––––– Bloques base
+          base: header, activity, community, repositories, metadata
+
+          # ––––– Plugins para “clonar” el ejemplo
           plugin_languages: yes
-          plugin_languages_limit: 8
-          plugin_languages_details: bytes-size, percentage
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_limit: 10
           plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
           plugin_lines: yes
-          plugin_habits: yes
           plugin_achievements: yes
-          plugin_achievements_threshold: B         # Solo logros ≥ rango B
-          plugin_followup: yes                     # "¿A quién sigues y te sigue?"
+          plugin_achievements_display: detailed
+          plugin_achievements_threshold: B
+          plugin_followup: yes
+          plugin_repositories: yes
+          plugin_repositories_featured: voromb/web-portfolio, voromb/mi-proyecto-estrella

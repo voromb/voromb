@@ -1,0 +1,39 @@
+name: Metrics
+
+on:
+  # Todos los días a las 06:00 UTC ≈ 08:00 Madrid (cambia si prefieres otra hora)
+  schedule: [{ cron: "0 6 * * *" }]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # === Seguridad ===
+          token: ${{ secrets.METRICS_TOKEN }}      # Tu PAT
+          committer_token: ${{ secrets.GITHUB_TOKEN }}  # Para hacer el commit del SVG
+
+          # === Dónde y cómo deja el archivo ===
+          filename: github-metrics.svg             # Nombre resultante
+          output_action: commit                    # Haz commit automático
+          output_path: .                           # Lo deja en la raíz
+
+          # === Configuración general ===
+          template: classic
+          user: voromb                             # (puede omitirse; se infiere)
+          config_timezone: Europe/Madrid
+
+          # === Bloques base ===
+          base: header, activity, community, repositories
+
+          # === Plugins que suelo recomendar ===
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_isocalendar: yes
+          plugin_lines: yes
+          plugin_achievements: yes
+          plugin_achievements_threshold: B         # Solo logros ≥ rango B
+          plugin_followup: yes                     # “¿A quién sigues y te sigue?”

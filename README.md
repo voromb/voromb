@@ -1,14 +1,11 @@
 <h1 align="center">👋 ¡Hola, soy <span style="color:#facc15">Voro Moran</span>!</h1>
-
 <p align="center">
   💻 <strong>Desarrollador apasionado por la tecnología</strong><br/>
   🔭 Actualmente estoy desarrollando software y realizando tareas de TI en <strong>Aplisein</strong>.
 </p>
-
 <p align="center">
   Me especializo en <strong>Next.js</strong>, <strong>Strapi</strong>, <strong>PHP</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>MikroTik</strong>, <strong>Docker</strong> y <strong>Kubernetes</strong>.
 </p>
-
 <p align="center">
   📜 Certificado en tecnologías de redes por <strong>MikroTik</strong>
 </p>
@@ -19,7 +16,6 @@
 ---
 
 ## 🚀 Tecnologías que manejo
-
 <p align="center">
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Code-HTML-orange?style=for-the-badge" alt="HTML"/>
@@ -50,19 +46,18 @@
 ---
 
 ## 📊 Estadísticas de GitHub
-
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=voromb&show_icons=true&theme=radical" width="48%"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=voromb&layout=compact&theme=radical" width="48%"/>
 </p>
 
-
+## 🏆 Métricas de GitHub
+<p align="center">
+  <img src="github-metrics.svg" alt="Métricas de GitHub" width="100%"/>
+</p>
 
 ## 📫 ¡Conéctate conmigo!
-
 <p align="center">
   📧 <strong>Email:</strong> <a href="mailto:voromb@hotmail.com">voromb@hotmail.com</a><br/>
   🌐 <strong>Portafolio:</strong> <a href="#">LinkedIn</a>
 </p>
-
-![Panel de métricas de GitHub](./github-metrics.svg)

@@ -4,17 +4,26 @@ on:
   schedule: [{ cron: "0 6 * * *" }]
   workflow_dispatch:
 jobs:
-  build:
+  github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      # Necesario para asegurar que el repositorio está correctamente clonado
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      # Usa la acción de métricas
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
         with:
           # === Seguridad ===
-          token: ${{ secrets.METRICS_TOKEN }}      # Tu PAT
+          token: ${{ secrets.METRICS_TOKEN }}      # Tu PAT personal
           committer_token: ${{ secrets.GITHUB_TOKEN }}  # Para hacer el commit del SVG
           # === Dónde y cómo deja el archivo ===
           filename: github-metrics.svg             # Nombre resultante
           output_action: commit                    # Haz commit automático
+          committer_branch: main                   # Define explícitamente la rama
           output_path: .                           # Lo deja en la raíz
           # === Configuración general ===
           template: classic

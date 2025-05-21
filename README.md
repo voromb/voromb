@@ -64,3 +64,5 @@
   📧 <strong>Email:</strong> <a href="mailto:voromb@hotmail.com">voromb@hotmail.com</a><br/>
   🌐 <strong>Portafolio:</strong> <a href="#">LinkedIn</a>
 </p>
+
+![Panel de métricas de GitHub](./github-metrics.svg)

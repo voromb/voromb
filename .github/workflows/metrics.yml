@@ -3,7 +3,7 @@ name: Metrics
 
 on:
   schedule:
-    - cron: "0 6 * * *"         # 06:00 UTC → 08:00 España
+    - cron: "0 6 * * *"          # 06 UTC → 08 h Madrid
   workflow_dispatch:
 
 jobs:
@@ -12,29 +12,34 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # ─── Autenticación ────────────────────────────
+          # ─── Autenticación ───────────────────────────────
           token:           ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
-          # ─── Salida ───────────────────────────────────
+          # ─── Salida ─────────────────────────────────────
           filename:        github-metrics.svg
-          output_action:   commit      # ← ESTA línea genera el commit
-          output_path:     .           # ← y lo pone en la raíz
+          output_action:   commit            # commit automático
+          output_path:     .
 
-          # ─── Apariencia Matrix ───────────────────────
+          # ─── Apariencia Matrix ──────────────────────────
           template: terminal
           config_display: large
           config_timezone: Europe/Madrid
+
+          # 👉 Permiso para usar CSS de usuario
+          extras_features: metrics.run.puppeteer.user.css
+
+          # 👉 Tu CSS verde-sobre-negro
           extras_css: |
             svg { background:#000 !important; }
             text,tspan,.label,.field,.header,.section-title,
             h1,h2,h3,h4,h5,h6 { fill:#00ff00 !important; color:#00ff00 !important; }
             line,path[stroke] { stroke:#00ff00 !important; }
 
-          # ─── Bloques base ────────────────────────────
+          # ─── Bloques base ───────────────────────────────
           base: header, activity, community, repositories, metadata
 
-          # ─── Plugins ─────────────────────────────────
+          # ─── Plugins habituales ────────────────────────
           plugin_languages:              yes
           plugin_languages_sections:     most-used, recently-used
           plugin_languages_limit:        10
@@ -47,3 +52,9 @@ jobs:
           plugin_followup:               yes
           plugin_repositories:           yes
           plugin_repositories_featured:  voromb/web-portfolio, voromb/mi-proyecto-estrella
+
+          # ─── Plugin “Random code snippet” ───────────────
+          plugin_code:                  yes
+          plugin_code_languages:        javascript, typescript, php
+          plugin_code_lines:            16      # líneas por fragmento
+          plugin_code_load:             400     # eventos a rastrear

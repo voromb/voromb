@@ -3,7 +3,7 @@ name: Metrics
 
 on:
   schedule:
-    - cron: "0 6 * * *"          # 06 UTC → 08 España
+    - cron: "0 6 * * *"         # 06:00 UTC → 08:00 España
   workflow_dispatch:
 
 jobs:
@@ -12,54 +12,38 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # ─── Autenticación ───────────────────────────────
+          # ─── Autenticación ────────────────────────────
           token:           ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
-          # ─── Apariencia: verde «Matrix» ─────────────────
+          # ─── Salida ───────────────────────────────────
+          filename:        github-metrics.svg
+          output_action:   commit      # ← ESTA línea genera el commit
+          output_path:     .           # ← y lo pone en la raíz
+
+          # ─── Apariencia Matrix ───────────────────────
           template: terminal
           config_display: large
-          extras_css: |
-            /* Fondo */
-            svg { background:#000 !important; }
-
-            /* Texto y números */
-            text,
-            tspan,
-            .label,
-            .field,
-            .header,
-            .section-title,
-            h1,h2,h3,h4,h5,h6 {
-              fill:#00ff00 !important;
-              color:#00ff00 !important;
-            }
-
-            /* Bordes y ejes de gráficos */
-            line,
-            path[stroke] {
-              stroke:#00ff00 !important;
-            }
-
-            /* Barras y rectángulos (opcional) */
-            /* rect { fill:#00ff00 !important; } */
-
-          # ─── Configuración general ───────────────────────
           config_timezone: Europe/Madrid
+          extras_css: |
+            svg { background:#000 !important; }
+            text,tspan,.label,.field,.header,.section-title,
+            h1,h2,h3,h4,h5,h6 { fill:#00ff00 !important; color:#00ff00 !important; }
+            line,path[stroke] { stroke:#00ff00 !important; }
 
-          # ─── Bloques base ───────────────────────────────
+          # ─── Bloques base ────────────────────────────
           base: header, activity, community, repositories, metadata
 
-          # ─── Plugins ────────────────────────────────────
-          plugin_languages:               yes
-          plugin_languages_sections:      most-used, recently-used
-          plugin_languages_limit:         10
-          plugin_isocalendar:             yes
-          plugin_isocalendar_duration:    full-year
-          plugin_lines:                   yes
-          plugin_achievements:            yes
-          plugin_achievements_display:    detailed
-          plugin_achievements_threshold:  B
-          plugin_followup:                yes
-          plugin_repositories:            yes
-          plugin_repositories_featured:   voromb/web-portfolio, voromb/mi-proyecto-estrella
+          # ─── Plugins ─────────────────────────────────
+          plugin_languages:              yes
+          plugin_languages_sections:     most-used, recently-used
+          plugin_languages_limit:        10
+          plugin_isocalendar:            yes
+          plugin_isocalendar_duration:   full-year
+          plugin_lines:                  yes
+          plugin_achievements:           yes
+          plugin_achievements_display:   detailed
+          plugin_achievements_threshold: B
+          plugin_followup:               yes
+          plugin_repositories:           yes
+          plugin_repositories_featured:  voromb/web-portfolio, voromb/mi-proyecto-estrella

@@ -58,7 +58,7 @@
 
 ## 💻 Terminal Matrix
 
-![Panel Matrix](metrics_renders/github-metrics.svg?v=2)
+![Panel Matrix](https://raw.githubusercontent.com/voromb/voromb/main/github-metrics.svg?v=2)
 
 ---
 

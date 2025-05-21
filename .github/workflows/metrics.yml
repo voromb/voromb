@@ -1,65 +1,65 @@
+# .github/workflows/metrics.yml
 name: Metrics
 
 on:
   schedule:
-    - cron: "0 6 * * *"        # 06:00 UTC → 08:00 Madrid
+    - cron: "0 6 * * *"          # 06 UTC → 08 España
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # ─── Seguridad ────────────────────────────────────────
-          token: ${{ secrets.METRICS_TOKEN }}      # tu PAT
+          # ─── Autenticación ───────────────────────────────
+          token:           ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
-          # ─── Apariencia ───────────────────────────────────────
+          # ─── Apariencia: verde «Matrix» ─────────────────
           template: terminal
-          config_display: large                    # ancho completo (opcional)
+          config_display: large
           extras_css: |
-            /* Fondo 100 % negro */
-            svg { background: #000000 !important; }
+            /* Fondo */
+            svg { background:#000 !important; }
 
-            /* Texto y contadores verde fosforito */
+            /* Texto y números */
             text,
+            tspan,
             .label,
             .field,
-            h1, h2, h3, h4, h5, h6 {
-              fill: #00FF00 !important;
-              color: #00FF00 !important;
+            .header,
+            .section-title,
+            h1,h2,h3,h4,h5,h6 {
+              fill:#00ff00 !important;
+              color:#00ff00 !important;
             }
 
-            /* Líneas y trazos en verde */
+            /* Bordes y ejes de gráficos */
             line,
             path[stroke] {
-              stroke: #00FF00 !important;
+              stroke:#00ff00 !important;
             }
 
-          # ─── Configuración general ────────────────────────────
+            /* Barras y rectángulos (opcional) */
+            /* rect { fill:#00ff00 !important; } */
+
+          # ─── Configuración general ───────────────────────
           config_timezone: Europe/Madrid
 
-          # ─── Bloques base ─────────────────────────────────────
+          # ─── Bloques base ───────────────────────────────
           base: header, activity, community, repositories, metadata
 
-          # ─── Plugins ──────────────────────────────────────────
-          plugin_languages: yes
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_limit: 10
-
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-          plugin_lines: yes
-
-          plugin_achievements: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_threshold: B
-
-          plugin_followup: yes
-
-          plugin_repositories: yes
-          # Reemplaza los nombres por los repos que quieras destacar
-          plugin_repositories_featured: voromb/web-portfolio, voromb/mi-proyecto-estrella
+          # ─── Plugins ────────────────────────────────────
+          plugin_languages:               yes
+          plugin_languages_sections:      most-used, recently-used
+          plugin_languages_limit:         10
+          plugin_isocalendar:             yes
+          plugin_isocalendar_duration:    full-year
+          plugin_lines:                   yes
+          plugin_achievements:            yes
+          plugin_achievements_display:    detailed
+          plugin_achievements_threshold:  B
+          plugin_followup:                yes
+          plugin_repositories:            yes
+          plugin_repositories_featured:   voromb/web-portfolio, voromb/mi-proyecto-estrella

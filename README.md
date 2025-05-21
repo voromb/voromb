@@ -18,6 +18,12 @@
 
 ---
 
+## 💻 Terminal Matrix
+
+![Panel Matrix](https://raw.githubusercontent.com/voromb/voromb/main/github-metrics.svg?v=2)
+
+---
+
 ## 🚀 Tecnologías que manejo
 <p align="center">
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">

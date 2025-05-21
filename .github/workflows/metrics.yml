@@ -24,6 +24,7 @@ jobs:
           template: terminal
           config_display: large
           config_timezone: Europe/Madrid
+          optimize: no  
           extras_css: |
             svg { background:#000 !important; }
             text,tspan,.label,.field,.header,.section-title,

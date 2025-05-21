@@ -13,8 +13,8 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           # ─── Autenticación
-          token:           ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+token:           ${{ secrets.METRICS_TOKEN }}
+committer_token: ${{ secrets.METRICS_TOKEN }}
 
           # ─── Salida
           filename: github-metrics.svg     # nombre del archivo

@@ -17,11 +17,10 @@
 </p>
 
 ---
-
 ## 💻 Terminal Matrix
-
-![Panel Matrix](https://raw.githubusercontent.com/voromb/voromb/main/github-metrics.svg?v=2)
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/voromb/voromb/main/github-metrics.svg?v=2" alt="Panel Matrix" width="100%"/>
+</p>
 ---
 
 ## 🚀 Tecnologías que manejo
